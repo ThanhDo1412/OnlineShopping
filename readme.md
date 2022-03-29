@@ -47,14 +47,14 @@ curl --location --request GET 'https://localhost:5001/api/product/2'
 ## Database Structure
 ![alt text](https://github.com/ThanhDo1412/OnlineShopping/blob/master/Document/DatabaseSchema.drawio.png?raw=true)
 
-My database structure can slipt to 2 databases:
+My database structure can split to 2 databases:
   - Product database : it's used for managing product, product information and everything related to product
   - Activity database: this database is used for supporting sale and marketing team to do the report.
   
 ## Future plane to improve
   - Apply Swagger for API Doc
   - Apply cache for product search
-  - Improve table activity: slipt more column and more information, make user easy to do the report
+  - Improve table activity: split more column and more information, make user easy to do the report
   - Apply CI/CD
   - Apply Docker
   - Change structure from monolithic to Microservice (1 product service and 1 activity service) -> every call from searching product or going to product detail will capture and send an message to message queue and handle on activity service 
