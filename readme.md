@@ -7,6 +7,7 @@ This is the BackEnd platform of Online Shopping application. It's used for searc
 - Asp .Net Core web API
 - Repository patten
 - Entity framework Code first
+- NUnit/Shouldly/Moq for Unit test
 
 ## How to run
 Firstly, please download project and open cmnd in this folder. Please check connectionstring before execute commands to initalize database as below: 
@@ -41,9 +42,10 @@ Get Product details
 curl --location --request GET 'https://localhost:5001/api/product/2'
 ```
 ## Architecture
-
+![alt text](https://github.com/ThanhDo1412/OnlineShopping/blob/master/Document/Architecture.drawio.png?raw=true)
 
 ## Database Structure
+![alt text](https://github.com/ThanhDo1412/OnlineShopping/blob/master/Document/DatabaseSchema.drawio.png?raw=true)
 
 My database structure can slipt to 2 databases:
   - Product database : it's used for managing product, product information and everything related to product
